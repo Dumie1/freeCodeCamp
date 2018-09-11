@@ -1,3 +1,66 @@
+// =====================================================
+/* ===> Iterate with JavaScript While Loops
+
+var myArray = [];
+var i = 0;
+while(i < 5){
+    myArray.push(i);
+    i++;
+}*/
+
+// ====================================================
+/* ===> Iterate with JavaScript For Loops
+
+for(var i = 1; i < 6; i++){
+    myArray.push(i);
+}*/
+
+// ===================================================
+/*
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ======================================================
 /* ===> Use Multiple Conditional Ternary Operators
 
 function checkSign(num) {
@@ -192,7 +255,7 @@ function testElseIf(val) {
 testElseIf(7);
 */
 
-// ==============================================
+// ===========================================
 /* ===> Logical Order in If Else Statements
 
 function orderMyLogic(val) {
@@ -207,7 +270,7 @@ function orderMyLogic(val) {
 // Change this value to test
 orderMyLogic(7);*/
 
-// ==============================================
+// ============================================
 /* ===> Golf Code
 
 var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
@@ -341,7 +404,53 @@ function chainToSwitch(val) {
   return answer;
 }*/
 
-// ==============================================
-/* ===> 
+// ================================================
+/* ===> Returning Boolean Values from Functions
 
-*/
+function isLess(a, b) {
+  return (a < b) ? true : false;
+}
+isLess(10, 15);*/
+
+// ================================================
+/* ===> Counting Cards
+
+var count = 0;
+  function cc(card) {
+  switch(card){
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count++;
+      break;
+    case 10:
+    case 'J':
+    case 'Q':
+    case 'K':
+    case 'A':
+      count--;
+  }
+  if (count > 0){
+          return count + " Bet";
+        } else {
+          return count + " Hold";
+        }
+    return "Change Me";
+    // Only change code above this line
+  }
+cc(2); cc(3); cc(7); cc('K'); cc('A');*/
+
+// ===================================================
+/* ===>> Word Blanks
+
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+  // Your code below this line
+  var result = "";
+  result+= "My "+myAdjective+" "+myNoun+" "+myVerb+" very "+myAdverb+".";
+  // Your code above this line
+  return result;
+}
+// Change the words here to test your function
+wordBlanks("dog", "big", "ran", "quickly");*/
