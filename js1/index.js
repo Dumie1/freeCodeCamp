@@ -16,11 +16,14 @@ for(var i = 1; i < 6; i++){
 }*/
 
 // ===================================================
-/* ===> Iterate Odd Numbers With a For Loop
+/* ===> Iterate Through an Array with a For Loop
 
-
-
-*/
+var myArr = [ 2, 3, 4, 5, 6];
+// Only change code below this line
+var total = 0;
+for (var i = 0; i < myArr.length; i++) {
+  total += myArr[i];
+}*/
 
 
 
