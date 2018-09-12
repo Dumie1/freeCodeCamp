@@ -554,4 +554,10 @@ testLogicalOr(15);*/
 // ===============================================
 /* ===>
 https://github.com/HackYourFuture/fundamentals/blob/master/README.md
+
+ARRAY MANIPULATION
+https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/array_manipulation.md
+
+let favoriteAnimals = ['blowfish', 'capricorn', 'giraffe'];
+2.3 Now add Jim's favorite animal to the array, it's 'meerkat', but make sure it will be placed after 'blowfish' and before 'capricorn'.
 */
