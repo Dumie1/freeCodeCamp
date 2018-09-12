@@ -89,42 +89,24 @@ function randomWholeNum() {
   return Math.floor(Math.random() * 10);
 }*/
 
+// ===============================================
+/* ===> Use the parseInt Function 
+he parseInt() function parses a string and returns an integer. Here's an example
 
+function convertToInteger(str) {
+  var a = parseInt(str);
+  return (a);
+}
+convertToInteger("56");*/
 
+// ===============================================
+/* ===> Use the parseInt Function with a Radix
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function convertToInteger(str) {
+    var radix = 2;
+  return parseInt(str, radix);
+}
+convertToInteger("10011");*/
 
 // ======================================================
 /* ===> Use Multiple Conditional Ternary Operators
@@ -520,3 +502,14 @@ function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
 }
 // Change the words here to test your function
 wordBlanks("dog", "big", "ran", "quickly");*/
+
+// =================================================
+/* ===> Comparison with the Strict Equality Operator
+strict equality operator does not perform a type conversion.('===')
+
+*/
+
+// ================================================
+/* ===> 
+
+*/
