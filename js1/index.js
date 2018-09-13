@@ -649,6 +649,102 @@ var entreeValue = testObj['an entree'];   // Change this line
 var drinkValue = testObj["the drink"];    // Change this line
 */
 
+// =====================================================
+/* ===> Accessing Object Properties with Variables
+
+var testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+var playerNumber = 16; 
+var player = testObj[playerNumber];*/
+
+// =====================================================
+/* ===> Updating Object Properties
+
+var myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+myDog.name = 'Happy Coder';*/
+
+// ====================================================
+/* ===> Add New Properties to a JavaScript Obje
+
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+myDog.bark = 'woof';
+
+*/
+
+// ======================================================
+/* ===> Deleting object properties
+
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+delete myDog.tails;*/
+
+// =======================================================
+/* ===> Using Objects for Lookups
+
+function phoneticLookup(val) {
+  var result = "";
+
+  // Only change code below this line
+
+
+
+var lookup = {
+  'alpha': 'Adams',
+  'bravo': 'Boston',
+  'charlie': 'Chicago',
+  'delta': 'Denver',
+  'echo': 'Easy',
+  'foxtrot': 'Frank'
+};
+return lookup[val];
+  // Only change code above this line
+  return result;
+}
+// Change this value to test
+phoneticLookup("charlie");*/
+
+// =================================================
+/* ===> Testing Objects for Properties
+
+var myObj = {
+  gift: "pony",
+  pet: "kitten",
+  bed: "sleigh"
+};
+function checkObj(checkProp) {
+  // Your Code Here
+  if(myObj.hasOwnProperty(checkProp)){
+    return myObj[checkProp];
+  }else{
+    return "Not Found";
+  }
+}
+checkObj("gift");*/
+
+// =============================================
+/* ===> Manipulating Complex Objects
+
+
+
+*/
 
 
 
