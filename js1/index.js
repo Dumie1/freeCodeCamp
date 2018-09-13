@@ -233,6 +233,60 @@ function functionWithArgs(arg1, arg2) {
 }
 functionWithArgs(3, 4);*/
 
+// ===============================================
+/* ===> Understanding Undefined Value returned from a Function
+
+// Example
+var sum = 0;
+function addThree() {
+  sum = sum + 3;
+}
+
+// Only change code below this line
+function addFive(){
+  sum = sum + 5;
+}
+
+// Only change code above this line
+var returnedValue = addFive();*/
+
+// ===============================================
+/* ===> Assignment with a Returned Value
+
+// Example
+var changed = 0;
+
+function change(num) {
+  return (num + 5) / 3;
+}
+changed = change(10);
+
+// Setup
+var processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+ processed = processArg(7);*/
+
+ // ==============================================
+ /* ===> Stand in Line
+
+ function nextInLine(arr, item) {
+  // Your code here
+  arr.push(item);
+  var removed = arr.shift();
+  return removed;  // Change this line
+}
+
+// Test Setup
+var testArr = [1,2,3,4,5];
+
+// Display Code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6)); // Modify this line to test
+console.log("After: " + JSON.stringify(testArr));*/
+
 // ================================================
 /* ===> Global Scope and Functions
 
@@ -551,8 +605,54 @@ function testLogicalOr(val) {
 }
 testLogicalOr(15);*/
 
+// ==================================================
+/* ===> Quoting Strings with Single Quote
+
+var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';*/
+
+// =================================================
+/* ===> Escape Sequences in Strings
+
+var myStr = 'FirstLine\n\t\SecondLine\nThirdLine'; // Change this line*/
+
+// ==================================================
+/* ===> Build JavaScript Objects
+
+var myDog = {
+  'name': 'roy',
+  'legs': 4,
+  'tails': 1,
+  'friends': ['everything']
+};*/
+
+// ==================================================
+/* ===> Accessing Object Properties with Dot Notation
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ===============================================
 /* ===>
+
 https://github.com/HackYourFuture/fundamentals/blob/master/README.md
 
 ARRAY MANIPULATION
