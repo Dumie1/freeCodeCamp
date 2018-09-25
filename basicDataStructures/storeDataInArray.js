@@ -84,12 +84,69 @@ console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush',
  ---------------Copy Array Items Using slice()--------------
  copies, or extracts, a given number of elements to a new array, leaving the 
  array it is called upon untouched. slice() takes only 2 parameters — the first
-  is the index at which to begin extraction, and the second is the index at which 
-  to stop extraction (extraction will occur up to, but not including the element at 
+ is the index at which to begin extraction, and the second is the index at which 
+ to stop extraction (extraction will occur up to, but not including the element at 
 this index). Consider this:
 
 let weatherConditions = ['rain', 'snow', 'sleet', 'hail', 'clear'];
 let todaysWeather = weatherConditions.slice(1, 3);
 // todaysWeather equals ['snow', 'sleet'];
 // weatherConditions still equals ['rain', 'snow', 'sleet', 'hail', 'clear']
- */
+
+--------------------------------------------------------------
+Therefore, two parameters must be passed to the slice() function. The first
+parameter must be the index you would like the substring to start at. The second 
+parameter must be the index at which the substring ends.
+
+function forecast(arr) {
+return arr.slice(2,4);
+}
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));*/
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+-----Copy an Array with the Spread Operator---------
+In practice, we can use the spread operator to copy an array like so:
+
+let thisArray = [true, true, undefined, false, null];
+let thatArray = [...thisArray];
+// thatArray equals [true, true, undefined, false, null]
+// thisArray remains unchanged, and is identical to thatArray
+
+-----------------------------------------------------------------
+
+function copyMachine(arr, num) {
+  let newArr = [];
+  while (num >= 1) {
+    newArr.push([...arr]);
+    num--;
+  }
+  return newArr;
+}
+// change code here to test different cases:
+console.log(copyMachine([true, false, true], 2));*/
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+---------------Combine Arrays with the Spread Operator-------------------
+we can concatenate arrays, but this only allows us to combine arrays at
+the end of one, and at the start of another. Spread syntax makes the following
+operation extremely simple:
+
+let thisArray = ['sage', 'rosemary', 'parsley', 'thyme'];
+let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander'];
+// thatArray now equals ['basil', 'cilantro', 'sage', 'rosemary', 'parsley',
+'thyme', 'coriander']
+
+--------------------------------------------------
+
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = ['learning',...fragment, 'is', 'fun']; // change this line
+  return sentence;
+}
+console.log(spreadOut());*/
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+-------------------------
+
+*/
+
