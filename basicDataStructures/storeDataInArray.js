@@ -146,7 +146,33 @@ function spreadOut() {
 console.log(spreadOut());*/
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
--------------------------
+-----------Check For The Presence of an Element With indexOf()--------------
+indexOf() takes an element as a parameter, and when called, it returns the
+ position, or index, of that element, or -1 if the element does not exist on 
+the array. can be incredibly useful for quickly checking for the presence of
+an element on an array
+
+let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
+fruits.indexOf('dates') // returns -1
+fruits.indexOf('oranges') // returns 2
+fruits.indexOf('pears') // returns 1, the first index at which the element exists
+
+------------------------------------------------------
+%%%%%%%%%% solution 1 %%%%%%%%%%%%%%
+
+function quickCheck(arr, elem) {
+return arr.indexOf(elem) >= 0 ? true : false;
+}
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+
+%%%%%%%%% solution 2 %%%%%%%%%%%%
+function quickCheck(arr, elem) {
+  if(arr.indexOf(elem)>=0) {
+    return true;
+  }
+  return false;
+}
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
 
 */
 
