@@ -172,7 +172,56 @@ function quickCheck(arr, elem) {
   }
   return false;
 }
-console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));*/
 
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+----------Iterate Through All an Array's Items Using For Loops------------
+
+function greaterThanTen(arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 10) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+}
+greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
+// returns [12, 14, 80]
+
+------------------------------------------------
+
+function filteredArray(arr, elem) {
+  let newArr = [...arr];
+  for(let i = 0; i < newArr.length; i++) {
+    for(let j = 0; j < newArr[i].length; j++) {
+      if(newArr[i][j] == elem) {
+        newArr.splice(i,1);
+        i--;
+        break;
+      }
+    }
+  }
+  return newArr;
+}
+
+// change code here to test different cases:
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));*/
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+-------------multi-dimensional arrays-----------------
+
+let myNestedArray = [
+  // change code below this line
+  ['unshift', false, 1, 2, 3, 'complex', 'nested'],
+  ['loop', 'shift', 6, 7, 1000, 'method'],
+  ['concat', false, true, 'spread', 'array'],
+  ['mutate', 1327.98, 'splice', 'slice', 'push'],
+  ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth']
+  // change code above this line
+];*/
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+----------------------------
 */
 
