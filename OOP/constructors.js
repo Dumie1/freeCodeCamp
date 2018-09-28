@@ -141,6 +141,100 @@ for(let property in canary) {
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 ----------Use Prototype Properties to Reduce Duplicate Code-------
 
+function Dog(name) {
+  this.name = name;
+}
+Dog.prototype.numLegs = 4;
+// Add your code above this line
+let beagle = new Dog("Snoopy");*/
 
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+----------Iterate Over All Properties---------
+
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog("Snoopy");
+
+let ownProps = [];
+let prototypeProps = [];
+
+// Add your code below this line
+for (let property in beagle) {
+  if(Dog.hasOwnProperty(property)) {
+    ownProps.push(property)
+  }
+  else {
+    prototypeProps.push(property)
+  }
+}*/
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+-------------------
+
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog("Snoopy");
+
+let ownProps = [];
+let prototypeProps = [];
+
+// Add your code below this line
+for (let property in beagle) {
+  if(Dog.hasOwnProperty(property)) {
+    ownProps.push(property)
+  }
+  else {
+    prototypeProps.push(property)
+  }
+}*/
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+------------------------
+
+let ownProps = [];
+let prototypeProps = [];
+
+for (let property in duck) {
+  if(duck.hasOwnProperty(property)) {
+    ownProps.push(property);
+  } else {
+    prototypeProps.push(property);
+  }
+}
+console.log(ownProps); // prints ["name"]
+console.log(prototypeProps); // prints ["numLegs"]
+
+-------------------------------------------------
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog("Snoopy");
+
+let ownProps = [];
+let prototypeProps = [];
+
+// Add your code below this line
+for (let property in beagle) {
+  if(Dog.hasOwnProperty(property)) {
+    ownProps.push(property)
+  }
+  else {
+    prototypeProps.push(property)
+  }
+}*/
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+--------------------
 
 */
