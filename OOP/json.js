@@ -76,10 +76,3 @@ Location: Ocean
 
 https://www.digitalocean.com/community/tutorials/how-to-work-with-json-in-javascript
 */
-
-/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
---------------------
-
-
-
-*/
