@@ -1,8 +1,26 @@
 /*
+you may use JSON in your JavaScript programs, some general use cases of JSON include:
+
+* Storing data
+* Generating data structures from user input
+* Transferring data from server to client, client to server, and server to server
+* Configuring and verifying data
+
+*/
+
+/*
 The data transferred between the browser and server is often in a format called 
 JavaScript Object Notation (JSON). JSON resembles JavaScript object literal syntax,
 except that it's transferred as a string. Once received, it can be converted into
 an object and used in a script.
+*/
+
+ 
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+var obj = {"first_name" : "Sammy", "last_name" : "Shark", "location" : "Ocean"}
+
+var s = JSON.stringify(obj)
+console.log(s);
 */
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
@@ -205,6 +223,34 @@ use a forEach method to loop through the data
 */
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&77
-----------------------------
+---------Post Data with the JavaScript XMLHttpRequest Method--------
 
+<script>
+  document.addEventListener('DOMContentLoaded',function(){
+    document.getElementById('sendMessage').onclick=function(){
+
+      var userName=document.getElementById('name').value;
+      // Add your code below this line
+
+      req=new XMLHttpRequest();
+req.open("POST",url,true);
+req.setRequestHeader('Content-Type','text/plain');
+req.onreadystatechange=function(){
+  if(req.readyState==4 && req.status==200){
+    document.getElementsByClassName('message')[0].innerHTML=req.responseText;
+  }
+};
+req.send(userName);
+
+      // Add your code above this line
+    };
+  });
+</script>
+*/
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&7
+------------usefull links---------------
+
+
+https://www.digitalocean.com/community/tutorials/how-to-work-with-json-in-javascript
 */

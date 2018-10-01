@@ -47,3 +47,39 @@ let user = {
 let user2 = JSON.parse(JSON.stringify(user));
 console.log(user2);
 */
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&7
+-----an example of JSON.parse() within the context of an HTML file:--
+
+
+<html>
+<body>
+
+<p id="user"></p>
+
+<script>
+var s = '{"first_name" : "Sammy", "last_name" : "Shark", "location" : "Ocean"}';
+
+var obj = JSON.parse(s);
+
+document.getElementById("user").innerHTML =
+"Name: " + obj.first_name + " " + obj.last_name + "<br>" +
+"Location: " + obj.location;
+</script>
+
+</body>
+</html>
+
+// output =
+Name: Sammy Shark
+Location: Ocean
+
+https://www.digitalocean.com/community/tutorials/how-to-work-with-json-in-javascript
+*/
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+--------------------
+
+
+
+*/
