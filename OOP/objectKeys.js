@@ -19,7 +19,7 @@ Object.entries(user) = [ ["name","John"], ["age",30] ]
 */
 
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Here’s an example of using Object.values to loop over property values:
+Here’s an example of using Object.values to loop over property values using for of loop:
 
 let user = {
   name: "John",
@@ -56,7 +56,7 @@ function sumSalaries(salaries) {
 */
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-Count properties
+Count properties...
 Write a function count(obj) that returns the number of properties in the object:
 
 let user = {
