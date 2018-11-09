@@ -1,4 +1,4 @@
-/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 -----Create a Basic JavaScript Object------
 
 let dog = {
@@ -6,7 +6,7 @@ let dog = {
   numLegs : 2
 };*/
 
-/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 -------- Use Dot Notation to Access the Properties of an Object-------
 let dog = {
   name: "Spot",
@@ -14,7 +14,7 @@ let dog = {
 };
 console.log(dog.name , dog.numLegs);*/
 
-/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&
 ---------Create a Method on an Object------------
 let duck = {
   name: "Aflac",
